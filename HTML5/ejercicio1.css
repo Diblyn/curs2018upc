@@ -1,0 +1,70 @@
+body,html{
+    height:98%;
+    width:95%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body,html{
+    height:98%;
+    width:95%;
+    margin: auto;
+    
+    }
+/*-- Cajas --*/
+/* s'hauria de posar un box-sizing perque ens tingui en compte tota l'amplada, tant de bordes, marges i amplada dels continguts
+*{
+    box-sizing: border-box;
+}
+/*
+/*-- flex se usa en css3  --*/
+div{
+    display:flex;justify-content:center;align-items:center;
+    margin:2px;
+}
+/*-- mabecera -----------------------------------*/
+header {
+    background-color: red;
+    height: 20%;
+}
+/*-- menu -----------------------------------*/
+nav {
+    background-color: blue;
+    width: 20%;
+    height: 70%;
+    float: left ;
+
+}
+/*-- contenido -----------------------------------*/
+article {
+    background-color: rebeccapurple;
+    width: 50.00%;
+    height: 70%;
+    float: left ;
+    overflow: auto;
+
+}
+/*-- lateral -----------------------------------*/
+aside {
+    background-color: burlywood;
+    width: 20%;
+    float: right ;
+    height: 70%;
+}
+/*-- piedepagina -----------------------------------*/
+footer {
+    height: 10%;
+    background-color: orange;
+    clear: both;
+}
+
+
+/*-- sección -----------------------------------*/
+ 
+section {
+    background-color: greenyellow;
+    width: 20.00%;
+    height: 70%;
+    float: left;
+}
+

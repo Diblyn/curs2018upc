@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="ejercicio9.css" title="style">
+    <link rel="stylesheet" type="text/css" href="ejercicio91.css" title="style">
+    <link rel="stylesheet" type="text/css" href="ejercicio92.css" title="style">
+
+    <title>FORMULARIO DE ALTA</title>
+</head>
+<body>
+    <h1>Formulario de alta</h1>
+    <form method="post" action="http://daw.iesjoaquimmir.cat/sarti.php">
+        
+    <div id="contenedor" >
+       
+
+            <h1>Nombre y apellidos<span class="asterisco">*</span></h1>
+            <div>
+            <label for="Nombre"> Nombre:</label>
+             <input id="IdNombre" name="Nombre" type="text"></input> </br>
+            <label for="IdApellido1"> Primer apellido:</label>
+             <input id="IdApellido1" name="IdApellido1" type="text" size="40" ></input></br>
+            <label for="IdApellido2"> Segundo apellido:</label>
+            <input id="IdApellido2" name="IdApellido2" type="text" size="40" ></input></br>
+        </div>
+        <fieldset class="direccion">
+            <legend>Dirección</legend>
+            <input id="Iddireccion" name="direccion" type="text"></input> </br>
+            <label for="direccion"> Calle, número, piso:</label>
+            <input id="idcodigopostal" name="codigopostal" type="text"></input> </br>
+            <label for="codigopostal"> Código postal:</label>
+            <input id="municipio" name="municipio" type="text"></input> </br>
+            <label for="municipio">Municipio</label>
+            <label for="Provincia">Provincia</label>
+            <select name="entradalista" id="Provincia">
+                <optgroup label="Provincias">
+                    <option value="-1 selected"</option>
+                    <option>Barcelona</option>
+                    <option>Girona</option>
+                    <option>Lleida</option>
+                    <option>Tarragona</option>
+                </optgroup>
+            </select></br></br>
+            <label for="pais">País</label></br>
+            <select name="pais" id="pais">
+                    <optgroup label="pais">
+                        <option value="-1 selected"</option>
+                        <option>España</option>
+                        <option>Portugal</option>
+                        <option>Andorra</option>
+                        <option>Inglaterra</option>
+                    </optgroup>
+                </select></br></br>
+                <div class="cp">
+                    <p>El código postal es imprescindible para poder recibir los pedidos</p>
+                </div>
+        </fieldset>
+        <fieldset class="email">
+            <legend>Email<span class="asterisco">*</span></legend>
+            <label for="email"> Email:</label></br>
+            <input id="email" name="email" type="text"></input> </br>    
+        </fieldset>
+        <fieldset class="telefono">
+            <legend>Teléfono<span class="asterisco">*</span></legend>
+            <label for="fijo"> Fijo</label></br>
+            <input id="fijo" name="fijo" type="text"></input> </br>
+            <label for="movil"> Móvil</label></br>
+            <input id="movil" name="movil" type="text"></input> </br>
+        </fieldset>
+        <input class="submit" type="submit" value="Darme de alta"></input>
+    </div>   
+    </form>
+   
+</body>
+</html>

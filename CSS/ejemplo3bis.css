@@ -1,0 +1,42 @@
+body{
+    height:98%;
+    width:95%;
+    margin: auto;
+    }
+/*-- Cajas --*/
+/* s'hauria de posar un box-sizing perque ens tingui en compte tota l'amplada, tant de bordes, marges i amplada dels continguts
+*{
+    box-sizing: border-box;
+}
+/*
+/*-- flex se usa en css3  display:flex;justify-content:center;align-items:center;  --*/
+*{
+    box-sizing: border-box;justify-content:center;align-items:center;
+}
+
+/*-- Cabecera -----------------------------------*/
+#cabecera  {
+    background-color: yellow;
+ }
+/*-- Menu -----------------------------------*/
+#menu  {
+    width: 25%;
+    float: left;
+    background-color: red;
+    height: 100px;
+}
+/*-- Contenidos -----------------------------------*/
+#contenidos  {
+    width: 75%;
+    float: right;
+    height: 300px;
+    background-color: blue;
+
+ 
+}
+
+/*-- Pie de página-------------------------------*/
+#piedepagina  {
+    clear: both;
+    background-color: green;
+}

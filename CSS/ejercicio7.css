@@ -1,0 +1,49 @@
+/* 1) Los elementos deben mostrar una imagen de fondo: */
+ul li a{
+    padding-left: 20px;
+}
+ul{
+    border: 0.5px solid black;
+
+padding: 0px;
+
+
+
+    background-color: rgba(128, 128, 128, 0.062);
+    width: 20%;
+    margin: 0%;
+}
+
+li{
+    border: 0.5px solid black;
+    background-image: url(/Users/curs2018/Documents/Danny/CSS/botón-doble-play.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    /* pots posar background: color url(ruta relativa) no-repeat 3px; */
+    list-style: none;
+    padding: 3px;
+    bord
+
+
+}
+li:hover{
+/* 2) Cuando se pasa el ratón por encima de un elemento, se debe mostrar una imagen alternativa:*/
+
+    
+    background-image: url(/Users/curs2018/Documents/Danny/CSS/botón-doble-play-cambio.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+
+/* 3) El color de fondo del elemento también debe variar ligeramente y mostrar un color gris más oscuro (#E4E4E4) cuando se pasa el ratón por encima: */
+    background-color: #E4E4E4;
+    color: #FFF;
+}
+    /* 4) El comportamiento anterior se debe producir cuando el usuario pasa el ratón por encima de cualquier zona del elemento del menú, no solo cuando se pasa el ratón por encima del texto del elemento */
+
+ul li a:hover{
+    padding-left: 20px;
+    background-color: yellow;
+
+}
+
+

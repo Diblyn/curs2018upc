@@ -1,0 +1,110 @@
+/* 1) Aplicar las reglas CSS necesarias para que el formulario muestre el siguiente
+aspecto */
+div#contenedor{
+    width: 80%;
+    margin; 4%, auto;
+}
+span.asterisco{
+    color: red;
+}
+fieldset.nombre{
+    float: left;
+    padding: 10px;
+    width: 47%
+}
+fieldset.direccion{
+    float: right
+    padding: 10px;
+    width: 47%
+}
+fieldset.email{
+    clear: both;
+    float: left;
+    padding: 10px;
+    width: 47%
+}
+fieldset.telefono{
+    float:right
+    padding: 10px;
+    width: 47%
+}
+input.submit{
+    display: inline-block;
+    float: left;
+    clear: both;
+    width: 10em;
+    margin-top: 5%;    
+    margin-left: 45%;
+   }
+legend{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding:10px;
+    margin-left: 4px;
+}
+label{
+    width:20%;
+    display: inline-block; 
+}
+
+fieldset{
+    border-width: 2px;
+}
+/* Cuando el usuario pasa el ratón por encima de cada grupo de elementos de
+formulario (es decir, por encima de cada <li>) se debe modificar su color de fondo
+(sugerencia: color amarillo claro #FF9). Además, cuando el usuario se posiciona en un
+cuadro de texto, se debe modificar su borde para resaltar el campo que está activo
+cada momento (sugerencia: color amarillo #E6B700): */
+fieldset:hover{
+    background-color: #FF9;
+}
+input:hover, select:hover{
+    border-style: solid;
+border-color: #E6B700;
+border-width: 3px;
+}
+border-style: dashed;
+border-color: #f00;
+border-width: 10px;
+}
+
+/* 3) Utilizando el menor número de reglas CSS, cambiar el aspecto del formulario para que se muestre como la siguiente imagen: */
+/* fieldset{
+    border-width: 0px; 
+} 
+fieldset{
+    clear: both;
+    float: left; 
+} */
+/* has de canviar els inicials ja que no fa cas si no */
+
+/* 4) Cuando el usuario pasa el ratón por encima de un grupo de elementos de formulario (es decir, por encima de cada <li>) se debe mostrar el mensaje de ayuda asociado. Añadir las reglas CSS necesarias para que el formulario tenga el aspecto definitivo mostrado en la siguiente imagen: */
+.caja2 {
+    position: relative;
+    width: 300px;
+    margin: 10px auto;
+    }
+.info2 {
+    position: absolute;
+    z-index: 3; /*Los datos por encima de todo lo demás*/
+    top: 30%;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    padding: 5px;
+    text-align: center;
+    color: #eee;
+    background: #333;
+    background: rgba(0,0,0,.7);
+    -moz-transition:all linear 0.5s 0s; 
+    -webkit-transition:all linear 0.5s 0s;
+    transition:all ease 0.5s 0s;
+}
+fieldset.direccion .cp {
+    display:none;
+}
+fieldset.direccion:hover .cp{
+display:block;
+}

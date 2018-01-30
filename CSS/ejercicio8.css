@@ -1,0 +1,60 @@
+/* 1. Alinear el texto de las celdas, cabeceras y título. Definir los bordes de la tabla,
+celdas y cabeceras (color gris oscuro #333). */
+table{
+    font:arial;
+    border: 1px, solid #333;
+    border-collapse: collapse;
+    text-align:center;
+} 
+td{
+    border: 1px solid#333;
+    border-width: 1px;
+    
+    padding: 5.5px 3.5px 3.5px 5.5px;
+}
+#cabecera td{
+    
+    background-color:rgb(206, 204, 204);
+}
+
+
+/* 2. Formatear las cabeceras de fila y columna con la imagen de fondo
+correspondiente en cada caso (euro.png, dolar.png, yen.png, libra.png).
+Modificar el tipo de letra de la tabla y utilizar Arial. El color azul claro es
+#E6F3FF. */
+
+#euro{
+background:url(euro.png) no-repeat 2px;
+padding-left: 20px;
+background-color:#E6F3FF;
+
+}
+#dolar{
+background: grey url(dolar.png) no-repeat 2px;
+padding-left: 20px;
+background-color: #E6F3FF;
+}
+#libra{
+    background: grey url(libra.png) no-repeat 2px;
+    padding-left: 20px;
+    background-color: #E6F3FF;
+}
+#yen{
+    background: grey url(yen.png) no-repeat 2px;
+    padding-left: 20px;background-color: #E6F3FF;
+
+}
+body{
+    font-family: Arial;
+}
+/* 3. Mostrar un color alterno en las filas de datos (color amarillo claro #FFFFCC).*/
+.fila1{
+background-color: #FFFFCC;
+}
+
+/* 4. El color de las filas varíe cuando el usuario pasa el ratón por encima de cada
+fila. La pseudo-clase :hover permite añadir fácilmente esta característica. */
+tr:hover #euro,tr:hover #dolar,tr:hover #yen,tr:hover #libra, tr:hover{
+    background-color: blueviolet;
+}
+ 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Información sobre el producto</title>
+</head>
+<body>
+    <form method="post" action="http://daw.iesjoaquimmir.cat/sarti.php">
+    <h2><strong>Información sobre el producto</strong></h2>
+    <fieldset>
+        <legend>Datos básicos</legend>
+        <label for="Nombre">Nombre</label></br>
+        <input type="text" name="" id="Nombre"/></br></br>
+        <label for="Descripcion" >Descripción</label></br>
+        <textarea id="Descripcion" name="" rows="6" cols="30"></textarea></br></br>
+        <label for="IdMiFoto">Foto</label>
+                <input id="IdMifoto" name="Elegir..." type="text"></input>
+                <input name="incluir mi foto" type="file"></input></br></br>
+                <input id="contador" name="Contador" type="checkbox" value="contador" checked="Checked"></input> Añadir contador de visitas</br>
+    </fieldset>
+        <br />
+        <fieldset>
+            <legend align="left" >Datos económicos</legend>
+            <input type="text" size="2">Precio> </input>€
+            Impuestos
+            <select>
+                <optgroup>
+                    <option value="-1" selected></option>
+                    <option>4%</option>
+                    <option>7%</option>
+                    <option>16%</option>
+                    <option>25%"</option>
+                </optgroup>
+            </select> <br />
+            Promoción</br>
+            <input name="Promoción"type="radio"value="Ninguno" checked="checked" />Ninguno<br />
+            <input name="Promoción"type="radio"value="Transporte_gratuito" />Transporte gratuito<br />
+            <input name="Promoción"type="radio"value="Descuento_5%" />Descuento 5%<br />
+        </fieldset>
+        <br />
+        <input type="submit" value="Guardar cambios" />
+        <input type="reset" value="Borrar los datos introducidos" />
+    </form>
+</body>
+</html>

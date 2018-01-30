@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rellena tu cv</title>
+</head>
+<body>
+    <strong>Rellena tu CV</strong>
+    <form method="post" action="http://daw.iesjoaquimmir.cat/sarti.php">
+       <label for="IdNombre"> Nombre:</label></br>
+            <input id="IdNombre" name="Nombre" type="text"></input> </br>
+        <label for="IdApellidos"> Apellidos:</label></br>
+            <input id="IdApellidos" name="IdApellidos" type="text" size="40" ></input></br>
+        <label for="IdContraseña"> Contraseña:</label></br>
+            <input id="IdContraseña" name="contraseña" type="password"></input></br>
+        <label for="IdDNI">DNI</label></br>
+            <input id="IdDNI" name="DNI" type="text"></input></br>
+        <label for="IdSexo">Sexo</label></br>
+            <input id="IdSexo" name="Sexo" type="radio" value="Hombre" checked="Checked"></input> Hombre</br>
+            <input name="Sexo" type="radio" value="Mujer"></input>Mujer</br></br>
+            <label for="IdMiFoto">Incluir mi foto</label>
+            <input id="IdMifoto" name="incluir mi foto" type="text"></input>
+            <input name="incluir mi foto" type="file" ></input></br></br>
+            <input name="Suscribirse al boletín de novedades" type="checkbox" checked="checked">Suscribirse al boletín de novedades</input></br></br>
+            <input type="submit" value="Guardar cambios"></input>
+            <input type="reset" value="Borrar los datos introducidos"></input>
+    </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rellena tu CV</title>
+</head>
+<body>
+    <h2>Rellena tu CV</h2>
+    <fieldset enabled="disabled">
+        <legend>Datos Personales</legend>
+    <form method="post" action="http://daw.iesjoaquimmir.cat/sarti.php">
+        <label for="Provincia">Provincia</label></br>
+        <select name="entradalista" id="Provincia">
+            <optgroup label="Provincias">
+                <option value="-1 selected"</option>
+                <option>Barcelona</option>
+                <option>Girona</option>
+                <option>Lleida</option>
+                <option>Tarragona</option>
+            </optgroup>
+        </select></br></br>
+        <label for="Fechanacimiento">Fecha de nacimiento</label></br>
+        <input type="text" size="1"></input>
+        de
+        <select name="entradalista" id="Provincia">
+            <optgroup label="Provincias">
+                <option value="-1" selected></option>
+                <option>Enero</option>
+                <option>Febrero</option>
+                <option>Julio</option>
+                <option>Noviembre</option>
+                <option>Diciembre</option>
+            </optgroup>
+        </select>
+        de
+        <input type="text" size="4"></input></br></br>
+        <label for="Temasinteres">Temas de interés</label></br>
+        <select name="opciones" multiple="multiple" id="Temasinteres">
+            <optgroup label="Temas de interes">
+                <option value="-1" selected></option>
+                <option>Administración de bass de datos</option>
+                <option>Análisis y programación</option>
+                <option>Arquitectura</option>
+                <option>Calidad</option>
+                <option>ERP, CRM, Business Intelligence</option>
+            </optgroup>
+        </select></br></br>
+        <input type="submit" value="Guardar cambios" />
+        <input type="reset" value="Borrar los datos introducidos" />
+    </form>
+</fieldset>
+</body>
+</html>

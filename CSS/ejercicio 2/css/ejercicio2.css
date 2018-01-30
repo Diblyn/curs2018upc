@@ -1,0 +1,47 @@
+/* Título h1 contenido en #primero */
+h1#titulo 
+{ color: #78f0aa; }
+ /* Strong en párrafo h1 */
+p strong  
+{ color: #fa3a0a; } 
+/* Destacado en párrafo */
+p span.destacado
+{ color: #eafa0a; }
+/* Título h2 contenido en #subtitulo */
+h2#subtitulo 
+{ color: #417dff; }
+/* enlace en parrafo */
+p a { color: red; }
+p a em { color: blue; }
+/* span dentro de especial */
+p span.especial
+{ color: purple; }
+/* caption de la tabla 1 */
+table caption 
+{ color: #0e44f3; }
+/* título columnas */
+thead th 
+{ color: #fdd938; }
+/* título fila 1 */
+tr th .especial
+{ color: #fdd938; }
+/* título fila 2 */
+tr th 
+{ color: #fa3a0a; }
+/* celda a:1 y b:2 */
+td
+{ color: green; }
+/* celda a:2 */
+td strong{ color: green; }
+td.especial { color: orange; }
+
+
+/* párrafo div */
+div#adicional  
+{ color: #a6c79c; }
+/* span especial */
+div#adicional span#especial 
+{ color: #f14ddc; }
+/* enlace  adicional */
+div#adicional p a
+{ color: #40ce2d; }
