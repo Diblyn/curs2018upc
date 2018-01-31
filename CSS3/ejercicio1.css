@@ -1,11 +1,15 @@
 li:first-child{
     color:blue;
-    font-size: 10px;
+}
+li:first-of-type{
+font-size: 10px;
 }
 li:last-child{
     color: blue;
-   font-size: 70px;
 }
+li:last-of-type{
+    font-size: 70px;
+    }
 li:nth-child(3){
     font-size: 30px;
 }

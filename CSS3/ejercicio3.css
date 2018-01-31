@@ -1,0 +1,38 @@
+body{
+}
+div{
+    border: 2px black solid;
+    margin: 3px;
+   display: inline-block;
+}
+#cuadro1{
+    box-sizing: content-box;
+    width: 50%;
+    border: 3px solid brown;
+    float: left;
+
+}
+#cuadro2{
+    box-sizing: padding-box;
+    width: 50%;
+    border: 3px solid green;
+    float: left;
+}
+#cuadro3{
+    box-sizing: border-box;
+    width: 50%;
+    border: 3px solid red;
+    float: left;
+}
+#cuadro4{
+    clear: both;
+    float:left;
+    background-color: pink;
+}
+#fotoribbon{
+    clear: both;
+    float: left;
+}
+#fotoribbon:hover{
+    background-image: url("img/fotodecoration.png");
+}

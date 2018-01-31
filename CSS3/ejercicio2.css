@@ -1,0 +1,11 @@
+a[href^="Google"]{
+    color: pink;
+}
+a[href*="net"]{
+    color: brown;
+}
+a[href*=".com"]:hover{
+    color:green;
+    font-size: 25px;
+    font-weight: 900;
+}
