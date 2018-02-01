@@ -29,10 +29,19 @@ div{
     float:left;
     background-color: pink;
 }
+
+
+
 #fotoribbon{
     clear: both;
     float: left;
+    
+   transition: all .2s ease-out; 
 }
 #fotoribbon:hover{
-    background-image: url("img/fotodecoration.png");
+     background-image: url("img/decoration.png");
+     transform: scale(1.4) ;
+}
+#fotoribbon:hover img{
+    visibility: hidden;
 }

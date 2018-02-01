@@ -1,21 +1,74 @@
-body, header, #container, menu, nav, article, aside, footer{
+html, body{
+    height: 98%;
+    width: 98%;
+}
+body, header, #container, menu, #video, nav, article, aside, footer{
     margin: 2% 1%;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    clear: both;
-}
-header{
- text-align: center;
 }
 #container{
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color: rgba(216, 216, 216, 0.884);
-}
+    border-radius: 0px 109px 10px 109px;
+-moz-border-radius: 0px 109px 10px 109px;
+-webkit-border-radius: 0px 109px 10px 109px;
+border: 6px double #000000;
+    flex: 4;
+    }
+    header{
+        flex: 2;
+    }
+    video{
+        flex: 3;
+    }
+    footer{
+        flex: 1;
+    }
+header, footer{
+    text-align: center;
+    background-color: bisque;
+    height: 30%;
+   }
 lateral{
     float: right;
 }
-article, lateral, footer{
+article { 
+    flex:2; order: 2;
+    background-color: rgb(174, 252, 252);
+    overflow: scroll;
+}
+nav{
+     width: 200px;  flex: 1;   order: 1;
+     background-color: rgb(184, 212, 184);
+     align-self: flex-start;
+     text-align: center;
+     margin:1% 2%;
+     border-radius: 165px 165px 165px 165px;
+-moz-border-radius: 165px 165px 165px 165px;
+-webkit-border-radius: 165px 165px 165px 165px;
+border: 6px dotted #000000;
+}
+ol{
+    margin:1% 15%;
+}
+legend{
     text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+aside{
+   flex:1;  order: 3; 
+   background-color: rgb(200, 149, 248);
+   align-self: flex-end;
+}
+#video{
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    -webkit-box-shadow: 24px 22px 51px 20px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 22px 51px 20px rgba(0,0,0,0.75);
+box-shadow: 24px 22px 51px 20px rgba(0,0,0,0.75);
 }

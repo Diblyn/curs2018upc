@@ -1,0 +1,48 @@
+html, body{
+
+    width: 98%;
+
+}
+body{
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap-reverse;
+
+}
+.a, .b, .c, .d, .e, .f{
+    border: 1px solid black;
+    margin: 1% 1%;
+    flex:1;
+    background-color: aqua;
+   min
+    
+}
+
+p{
+    background-color: aqua;
+}
+.a{
+    border-bottom-right-radius: 50px;
+}
+.b{
+    border-bottom-right-radius: 150px 50px;
+}
+.c{
+    border-bottom-right-radius: 50px 150px;
+}
+.d{
+    border-bottom-left-radius: 150px 50px;
+    border-top-right-radius: 150px 50px;
+}
+.e{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 25px;
+}
+.f{
+    border-bottom-left-radius: 350px;
+    border-bottom-right-radius: 350px;
+    border-top-left-radius: 350px;
+    border-top-right-radius: 350px;
+}
