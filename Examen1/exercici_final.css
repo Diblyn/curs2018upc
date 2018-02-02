@@ -1,0 +1,151 @@
+html, body{
+    height: 96%;
+    width: 96%;
+}
+html{
+    background-color: white;
+}
+article, aside, footer{
+    margin: 1% 3%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+body{
+    background: linear-gradient(to bottom, rgb(160, 221, 250), white);
+    overflow: hidden;
+    margin: 2% 3%;
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    height: 10%;
+    flex-direction: row;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 25px 25px 10px 0px;
+-moz-border-radius: 25px 25px 10px 0px;
+-webkit-border-radius: 25px 25px 10px 0px;
+border: 0px solid #000000;
+}
+header h1{
+    flex:6;
+}
+header img{
+    display: flex;
+    height: 80px;
+    flex: 1;
+}
+nav{
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    flex: columns;
+    background-color: rgb(28, 28, 199);
+}
+nav li a{
+    color:white;
+    border-radius: 33px 33px 33px 33px;
+-moz-border-radius: 33px 33px 33px 33px;
+-webkit-border-radius: 33px 33px 33px 33px;
+border: 0px solid #000000;
+}
+nav li{
+    height: 500px;
+    width: 550px;
+}
+nav ul{
+    display:flex;
+    text-align: center;
+    color: white;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+nav ul li{
+    margin:2% 35%;
+    height: 25px;
+    height: 30px;
+    width:75px;
+    border-radius: 33px 33px 33px 33px;
+-moz-border-radius: 33px 33px 33px 33px;
+-webkit-border-radius: 33px 33px 33px 33px;
+border: 0px solid #000000;
+}
+nav li a:hover{
+    background-color: white;
+    color:orange;
+}
+section{
+    margin: 1% 3%;
+    display: flex;
+    flex-direction: column;
+}
+article section input{
+    flex-direction: row;
+}
+aside{
+    flex:1;  order: 2; 
+    background-color: rgb(184, 235, 248);
+    width: 50px;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 98px 98px 98px 98px;
+-moz-border-radius: 98px 98px 98px 98px;
+-webkit-border-radius: 98px 98px 98px 98px;
+border: 0px solid #000000;
+-webkit-box-shadow: 10px 18px 31px 9px rgba(0,0,0,0.58);
+-moz-box-shadow: 10px 18px 31px 9px rgba(0,0,0,0.58);
+box-shadow: 10px 18px 31px 9px rgba(0,0,0,0.58);
+}
+aside #mifoto{
+    display:flex;
+    margin-left: 8px;
+    height: 40px;
+    width: 40px;
+}
+aside p{
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+}
+aside h2{
+    background-color: rgb(123, 186, 238);
+}
+
+aside ol li{
+    background-image :url(imatges/icono_categoria.png) no-repeat 2px;
+    
+}
+#container{
+border: 1px solid black;
+display: flex;
+}
+article{
+    flex:3; order: 1;
+    background-color: white;
+}
+article h2{
+    padding-left: 3%;
+    background-color: rgb(118, 158, 245);
+    border-radius: 25px 25px 10px 10px;
+-moz-border-radius: 25px 25px 10px 10px;
+-webkit-border-radius: 25px 25px 10px 10px;
+border: 0px solid #000000;  
+}
+footer{
+    padding: 2% 3%;
+    flex:4; 
+    background-color: aquamarine;
+    border-radius: 10px 0px 40px 40px;
+-moz-border-radius: 10px 0px 40px 40px;
+-webkit-border-radius: 10px 0px 40px 40px;
+border: 0px solid #000000;
+}
+article .input{
+    justify-content: center;
+}
