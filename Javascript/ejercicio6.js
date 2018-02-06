@@ -11,9 +11,9 @@ letras = letras.toUppercase();
 if (DNI < 0 || DNI > 99999999){
 alert("Revise su dni ya que no es correcto. Debe contener un máximo de 8 cifras");
 }
-else if ( letraDNI.length > 1){
+/* else if ( letraDNI.length > 1){
 alert("Revise su letra de DNI ya que no es correcto. Debe contener un máximo de una letra");
-}
+} */ 
 else{
     resto = DNI % 23;
     alert(letras[resto]);
@@ -22,7 +22,7 @@ else{
         alert("letra correcta");
     }
     else {
-        alert("revise la letra por favor");
+        alert("revise la letra por favor, ya que debería ser " + letraDNI +"");
     }
 
 
