@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="ejercicio9.css" title="style">
+    <link rel="stylesheet" type="text/css" href="ejercicio91.css" title="style">
+    <link rel="stylesheet" type="text/css" href="ejercicio92.css" title="style">
+
+    <title>FORMULARIO DE ALTA</title>
+    <meta charset="utf-8">
+    <script type='text/javascript'>
+        function mostrar_un_alert(){
+            var resultado=confirm("seguro?");
+            if (resultado){
+                document.myForm.submit();
+                return true;
+            }else{
+                alert("El seu formulari no pot ser enviat.");
+                return false;
+            }
+        }
+        </script>
+        <noscript "no contempla tu explorador este javascript"></noscript>
+</head>
+<body>
+    <h1>Formulario de alta</h1>
+    <form name="myForm" method="post" action="http://daw.iesjoaquimmir.cat/sarti.php">
+            <fieldset class="search">
+                <legend>Buscador</legend>
+                <label for="search"> Busca:</label></br>
+                <input  type="search" placeholder="introduce tu palabra clave a buscar"></input> </br>
+            </fieldset>
+            <fieldset>
+                <legend> Nombre y apellidos<span class="asterisco">*</span></legend>
+            <label for="Nombre"> Nombre:</label>
+             <input id="IdNombre" name="Nombre" type="text"></input> </br>
+            <label for="IdApellido1"> Primer apellido:</label>
+             <input id="IdApellido1" name="IdApellido1" type="text" size="40" ></input></br>
+            <label for="Idfechanac"> Fecha Nacimiento:</label>
+            <input type="date" size="40" ></input></br>
+            <label for="Idhoranac"> Hora Nacimiento:</label>
+            <input type="time" size="40" ></input></br>
+            </fieldset>
+        
+     <!--    <input class="submit" type="submit" value="Darme de alta"></input> -->
+        <button onclick="return mostrar_un_alert()">Click me</button>
+   
+</body>
+</html>
