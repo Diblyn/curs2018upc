@@ -11,18 +11,22 @@ function palindromo(cadena){
     var resultado="algo ha ido mal";
     var silabas, textonormal, textoreves;
 
+    // per a que et respecti has de fer cadenasinespacios.split("").reverse();
+    // es millor fer usar slice (de la posicio X, fins la posició Y no inclosa), exemple (slice(1,5)) --> funciona per string i arrays
+
        //cadena sin espacios en blanco
-    cadena = cadena.replace(" ","");
+       for(i=0; i < cadena.length; i++) {
+        cadena = cadena.replace(" ", "");
+        }
      //cadenatexto a array
      silabas = cadena.split("");
-    //cadenatexto a array
-    silabas = silabas.join("");
-     //cadenatexto de nuevo a array
-     silabas = silabas.split("");
+  
+
     //crear dos arrays frase normal y frase alreves
     textonormal = silabas;
-    textoreves = silabas.reverse;
-
+    textoreves = silabas.reverse();
+    alert(textonormal);
+    alert(textoreves);
 
     //ver que los dos arrays tienen elementos iguales
         var n = textonormal.length;

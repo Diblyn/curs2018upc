@@ -1,21 +1,20 @@
-var silabas, cadena, textonormal, textoreves;
+numero = prompt("qué número factorial quieres saber?");
+if (isNaN(numero)){
+    alert("el número no es válido");
+} else{
+    factor(numero);
+    function factor(num){
+        //return num>1?numero*factorial(--num):1;
+        
+        if (num>1){
+           var ret = num*factorial(--num);
+        } else{
+            ret = 1;
+        }
+     
+    return numero;
+    
+    }
+}
 
-cadena = prompt("La ruta nos aportó otro paso natural");
-
-cadena = cadena.replace(" ","");
-//cadenatexto a array
-silabas = cadena.split("");
-alert(silabas);
-//cadenatexto a array
-silabas = silabas.join("");
-alert(silabas);
-//cadenatexto de nuevo a array
-silabas = silabas.split("");
-//crear dos arrays frase normal y frase alreves
-textonormal = silabas;
-alert(silabas);
-textoreves = silabas.reverse;
-alert(textoreves);
-
-
-
+    

@@ -31,7 +31,7 @@ function esEntero (num){
 }
 
 /*
-
+tambe es podria posar de la seguent forma (aprox);
 function x(n){
     return(n%2? "impar "par");
 }
