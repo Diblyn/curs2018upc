@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="ejercicioapuntes.css" title="style">
+   
+
+    <title>FORMULARIO DE ALTA</title>
+</head>
+<body>
+    <h1>Formulario de alta</h1>
+    <form method="post" action="http://daw.iesjoaquimmir.cat/sarti.php">
+            <fieldset class="search">
+                <legend>Buscador</legend>
+                <label for="search"> Busca:</label></br>
+                <input  type="search" placeholder="introduce tu palabra clave a buscar"></input> </br>
+            </fieldset>
+            <fieldset>
+                <legend> Nombre y apellidos<span class="asterisco">*</span></legend>
+            <label for="Nombre"> Nombre:</label>
+             <input id="IdNombre" name="Nombre" type="text"></input> </br>
+            <label for="IdApellido1"> Primer apellido:</label>
+             <input id="IdApellido1" name="IdApellido1" type="text" size="40" ></input></br>
+            <label for="Idfechanac"> Fecha Nacimiento:</label>
+            <input type="date" size="40" ></input></br>
+            <label for="Idhoranac"> Hora Nacimiento:</label>
+            <input type="time" size="40" ></input></br>
+            </fieldset>
+        <fieldset class="direccion">
+            <legend>Dirección</legend>
+            <input id="Iddireccion" name="direccion" type="text"></input> </br>
+            <label for="direccion"> Calle, número, piso:</label>
+            <input id="idcodigopostal" name="codigopostal" type="text"></input> </br>
+            <label for="codigopostal"> Código postal:</label>
+            <input id="municipio" name="municipio" type="text"></input> </br>
+            <label for="municipio">Municipio</label>
+            <label for="Provincia">Provincia</label>
+            <select name="entradalista" id="Provincia">
+                <optgroup label="Provincias">
+                    <option value="-1 selected"</option>
+                    <option>Barcelona</option>
+                    <option>Girona</option>
+                    <option>Lleida</option>
+                    <option>Tarragona</option>
+                </optgroup>
+            </select></br></br>
+            <label for="pais">País</label></br>
+            <select name="pais" id="pais">
+                    <optgroup label="pais">
+                        <option value="-1 selected"</option>
+                        <option>España</option>
+                        <option>Portugal</option>
+                        <option>Andorra</option>
+                        <option>Inglaterra</option>
+                    </optgroup>
+                </select></br></br>
+                <div class="cp">
+                    <p>El código postal es imprescindible para poder recibir los pedidos</p>
+                </div>
+        </fieldset>
+        <fieldset class="email">
+            <legend>Email<span class="asterisco">*</span></legend>
+            <label for="email"> Email:</label></br>
+            <input type="email"></input> </br>    
+        </fieldset>
+        <fieldset class="telefono">
+            <legend>Teléfono<span class="asterisco">*</span></legend>
+            <label for="Idtelf"> Teléfono:</label>
+            <input type="tel" size="40" ></input></br>
+            <label for="Idmovil"> Móvil</label></br>
+            <input id="tel"></input> </br>
+        </fieldset>
+        <fieldset class="url">
+                <legend>URL página web</legend>
+                <label for="url" > https://</label>
+                <input  type="url" placeholder="introduce tu web"></input> </br>
+        </fieldset>
+        <fieldset class="Fecha">
+                <legend>Fecha envio</legend>
+                <label for="url" > Hora de envío</label>
+                <input  type="datetime-local"></input> </br>
+        </fieldset>
+        
+        <fieldset class="encuesta">
+                <legend>Encuesta</legend>
+                <label for="encuesta" > Encuesta</label>
+                <input  type="range"></input> </br>
+        </fieldset>
+        <input class="submit" type="submit" value="Darme de alta"></input>
+        <img src="imatges/foto.jpg" alt="hola" height="50px" width="50px"/> 
+           
+    </form>
+   
+</body>
+</html>

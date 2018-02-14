@@ -8,20 +8,38 @@
 			window.onload = function() {
 				var mensajeTot="";
 
-  				// Numero de enlaces de la pagina
+  				// 1. Numero de enlaces de la pagina
   				var enll = document.getElementsByTagName("a");
-				mensajeTot += "Numero d'enllços: " + enll.length + "<br>";
+				mensajeTot += "Numero d'enllaços: " + enll.length + "<br>";
   
-  				// Direccion del penultimo enlace
+  				// 2. Direccion del penultimo enlace
  				var i= enll.length;
 				var penultEnll = enll[i-2];
-					mensajeTot += (penultEnll + penultEnll.target + penultEnll.textContent); 
-					//
+					mensajeTot += "direcció penultim enllaç: " + (penultEnll + penultEnll.target + penultEnll.textContent)+ "<br>"; 
+					
   
-  				// Numero de enlaces que apuntan a http://prueba
-				//var enll2s = document.querySelectorAll("a.http://prueba").length;
-				//	alert( enll2s)
-				  // Numero de enlaces del tercer párrafo
+				  // 3. Numero de enlaces que apuntan a http://prueba
+				  /* 
+				  var enlaces = doc..getE..ByTag("a");
+				  de i=0 a i< enlaces.length;
+				  si enlaces[i]== "http.href://prueba";
+				  contador++;
+				  */
+				var enlazanaprueba =0; 
+				for(j=0;j<i;j++){
+				console.log(enll[j].href);
+					if(enll[j].href=="http://prueba/"){
+						enlazanaprueba = enlazanaprueba + 1;
+					} 
+				}
+				mensajeTot += "nº enllaços a \"http://prueba\": "+  enlazanaprueba+ "<br>";
+
+				//un altre opció semblant var enlazanprueba = document.getElementsByTagName("a")("a.http://prueba").length;
+					
+
+				// 4. Numero de enlaces del tercer párrafo
+				var p = document.getElementsByTagName("p");
+				mensajeTot += "nº enllaços 3r paràgraf: "+  p[2].getElementsByTagName("a").length; 
 				
 	  
 			//ens posicionem al div id ="informacion"

@@ -1,0 +1,57 @@
+form{
+    width: 80%;
+    margin; 4%, auto;
+}
+span.asterisco{
+    color: red;
+}
+fieldset.nombre{
+    float: left;
+    padding: 10px;
+    width: 47%
+}
+fieldset.direccion{
+    float: right
+    padding: 10px;
+    width: 47%
+}
+fieldset.email{
+    clear: both;
+    float: left;
+    padding: 10px;
+    width: 47%
+}
+fieldset.telefono{
+    float:right
+    padding: 10px;
+    width: 47%
+}
+input.submit{
+    display: inline-block;
+    float: left;
+    clear: both;
+    width: 10em;
+    margin-top: 5%;    
+    margin-left: 45%;
+   }
+legend{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding:10px;
+    margin-left: 4px;
+}
+label{
+    width:20%;
+    display: inline-block; 
+}
+
+fieldset{
+    border-width: 2px;
+}
+
+img{
+    float: left;
+    clear: both;
+}
