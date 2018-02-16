@@ -16,6 +16,7 @@ var semaforo = true;
             camp2[j].addEventListener("blur", cambios);
         }
         document.addEventListener("unload", despedida);
+        document.getElementsByTagName("label");
     }
 
     //1 aparezca alert antes de enviar formulario
@@ -39,8 +40,17 @@ var semaforo = true;
         }
     }
 
-    //4 Mostrar mensaje de despedida al cerrar la página
-    function despedida(this){
-        alert("vigila que hem tanques");
+    //4 Mostrar mensaje de despedida al cerrar la página (no es pot fer personalitzat ara)
+    window.addEventListener('load',cargaEventos);
+    windows.onbeforeunload = function despedida(e){
+        var dialoText = 'Dialog text here';
+        e.returnValue = dialogText;
+        return dialogText;
     }
     
+    function ponerRojo(){
+        var labels = documents.getElementsByClassName("label");
+        for (var i in labels){
+            labels[i].style.color="red";
+        }
+    }

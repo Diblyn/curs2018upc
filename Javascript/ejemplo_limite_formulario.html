@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="ejemplo_limite_formulario.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Envío de sugerencias</h1>
+    <img id="fotodecoration" src="imatges/foto.jpg" alt="Sugerencia" height="75px" width="75px"/> 
+    <form method="post" action="http://daw.iesjoaquimmir.cat/sarti.php">
+        <fieldset>
+            <legend> Sugerencias<span class="asterisco">*</span></legend>
+            <label for="Sugerencias"> Sugerencias:</label>
+            <textarea id = "Sugerencias" onkeyup="return limita(10);"></textarea>
+        </fieldset>
+        <br />
+        <form name="f1" id="f1">
+            <textarea type="text" name="f1t1" id="contador"></textarea>
+        </form>
+          <button class="Submit" id="texto" value="Enviar";>Enviar</button>
+    </form>
+</body>
+</html>

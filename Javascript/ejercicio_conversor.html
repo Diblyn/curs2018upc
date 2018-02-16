@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="ejercicio_conversor.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+        #Pasaraeuros { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000000; background-color: #CCCCCC; border: 1px #000000 outset; padding: 1px}
+        #Pasarapesetas { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold;color: #000000; background-color: #CCCCCC; border: 1px #000000 outset; padding: 1px}
+        label{ font-weight: bold; color:red}
+        #Pesetas , #Euros{ font-weight: bold; color: blue}
+        </style>
+</head>
+<body>
+    <h1>CONVERSOR</h1>
+        <fieldset>
+            <legend> Conversión a €uros</legend>
+                <label for="Pesetas">Pesetas</label>
+                <input type="text" id = "Pesetas"></input>
+                <button  id="Pasaraeuros" value="Pasar a euros" onClick="conversorpesetas();">Pasar a €uros</button>
+        <br />
+                <label for="Euros">Euros:</label>
+                <input type="text" id = "Euros"></input>
+                <button id="Pasarapesetas" value="Enviar" onClick="conversoreuros();">Pasar a Pesetas</button>
+        </fieldset>
+</body>
+</html>
