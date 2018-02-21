@@ -1,0 +1,8 @@
+.oculto { 
+    display: none;
+}
+.visible {  
+    /* tb es posa display: block; */
+    display: inline;
+    color: red;
+}

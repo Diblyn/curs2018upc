@@ -9,20 +9,5 @@ function limita(maximoCaracteres) {
     diferencia = maximoCaracteres - elemento.value.length;
     document.getElementById("ayuda").innerHTML = diferencia + " / " +  maximoCaracteres;
     return resposta;
-}
 
-function resalta(elEvento) {
-    var evento = elEvento || window.event;
-    switch(evento.type) {
-    case 'mouseover':
-    this.style.borderColor = 'black';
-    break;
-    case 'mouseout':
-    this.style.borderColor = 'silver';
-    break;
-    }
-    }
-    window.onload = function() {
-    document.getElementById("seccion").onmouseover = resalta(event);
-    document.getElementById("seccion").onmouseout = resalta(event);
-    }
+}
