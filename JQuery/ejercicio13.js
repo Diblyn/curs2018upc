@@ -1,17 +1,44 @@
 //jQuery
+var i="nada",elemento="nada";
 $(document).ready(function(){
-    var elemento = li;
-    console.log(elemento);
-    console.log(elemento.lenght);
-    $("#btnAnadir").on("click",function(){
+
+     /* $("#btnAnadir").on("click",function(){
         $(elemento).show();
-    })
-    $("#btnEliminar").on("click",function(){
-        $("elemento[elemento.length]").hide();
-    })
+    })*/
+    /* $("#btnEliminar").on("click",function(){
+        var elemento = $("li");
+        $(elemento[elemento.length-1]).remove();
+        console.log(elemento)
+        console.log(elemento.length); */
+        
+        //un altre forma de fer-ho amb hide i show
+        $("#btnEliminar").on("click",function(){
+            var ocultar=$("li").length-$("li[style='display: none;']").length;
+            $("li:nth-child("+ocultar+")").hide();
+            console.log(elemento);
+            console.log(elemento.length);
+         });
+         $("#btnAnadir").on("click",function(){
+            var ocultar=$("li").length-$("li[style='display: none;']").length+1;
+            $("li:nth-child("+ocultar+")").show();
+            console.log(elemento);
+            console.log(elemento.length);
+         });
+
 });
+/* s'hauria de posar d'aquesta manera millor
+$(document).ready(cargaEventos);
 
+function cargaEventos(){
+    $("#btnEliminar").on("click",eliminar);
+    $("#btnAnadir").on("click", anadir);
+}
 
+function eliminar(){
+    var elemento = $("li");
+    $(elemento[elemento.length-1]).remove();
+}
+*/
 
 /* JavaScript
 window.addEventListener('load', cargaEventos);
