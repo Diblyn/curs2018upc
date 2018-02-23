@@ -1,0 +1,30 @@
+html, body{
+    height: 98%;
+    width: 98%;
+}
+div{
+    display: flex;
+    
+    
+}
+#contenedor1{
+    border: 2px solid black;
+    background-color: rgb(206, 250, 141);
+    overflow: scroll;
+    
+}
+#contenido{
+    border: 2px solid black;
+    background-color: rgb(247, 247, 214);
+    display: flex;
+    flex:6;
+}
+a{
+    border: 2px solid black;
+    font-weight: bold;
+    margin: 1%;
+    padding:1%;
+    background-color: lightcoral;
+    display:flex;
+    flex:1;
+}
