@@ -1,0 +1,20 @@
+html, body{
+    height: 98%;
+    width: 98%;
+}
+button, .ui-dialog-title, #dialog{
+    border: 1px solid black;
+    background-color: aquamarine;
+    float: left;
+    margin: 1%;
+}
+#dialog[title]{
+    border: 1px solid black;
+}
+#eraser{
+float: left; 
+margin: 12px 12px 20px 0;
+}
+#dialog-confirm, #dialog{
+    display: none
+}
