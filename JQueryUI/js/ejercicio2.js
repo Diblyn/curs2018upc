@@ -4,7 +4,7 @@ $(document).ready(function() {
   } );
 
   //customize icons
-$( function() {
+/* $( function() {
 var icons = {
     header: "ui-icon-circle-arrow-e",
     activeHeader: "ui-icon-circle-arrow-s"
@@ -19,20 +19,22 @@ $( "#toggle" ).button().on( "click", function() {
     $( "#accordion" ).accordion( "option", "icons", icons );
     }
 });
-} );
+} ); */ 
 
 // no auto-height
-$( function() {
+/* $( function() {
     $( "#accordion" ).accordion({
-      heightStyle: "content"
+      heightStyle: "content",
+      header: "h3"
     });
-  } );
+  } ); */
 
   //reordenar paneles - sortable
 $( function() {
 $( "#accordion" )
     .accordion({
-    header: "> div > h3"
+    header: "h3",
+    collapsible: true
     })
     .sortable({
     axis: "y",
