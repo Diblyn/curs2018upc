@@ -3,6 +3,6 @@ $(document).ready(function(){
         auto: true,
         speed:2000,
         slideWidth: 600,
-        adaptiveHeight: true
+        
     });
 });

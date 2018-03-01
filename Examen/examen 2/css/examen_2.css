@@ -1,0 +1,41 @@
+html, body{
+    height: 98%;
+    width: 98%;
+}
+img{
+    width: 700PX;
+    height: 450px;
+}
+
+#vila{
+    display:flex;justify-content:center;align-items:top;
+    border: 1px solid black;
+    margin: auto;
+    width: 700px;
+    height: 450px;
+}
+#mon{
+    display:flex;justify-content:center;align-items:top;
+    border: 1px solid black;
+    margin: auto;
+    width: 700px;
+    height: 450px;
+}
+#slider{
+    display:flex;justify-content:center;align-items:top;
+    border: 1px solid black;
+    margin: auto;
+    width: 700px;
+    height: 450px;
+}
+#contenido{
+    display:flex;justify-content:center;align-items:top;
+    border: 1px solid black;
+    margin: auto;
+    width: 700px;
+}
+a{
+    display:flex;justify-content:center;align-items:top;
+    width: 5%;
+    margin: auto;
+}

@@ -1,0 +1,16 @@
+
+body{
+    padding-top: 70px;
+}
+nav{
+    background-color: blue!important;
+}
+button{
+    background-color: rgb(179, 248, 179)!important;
+    color: black!important;
+}
+img{
+    width:200px;
+    height:200px;
+    border: 1px solid red;
+}

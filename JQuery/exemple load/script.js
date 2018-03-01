@@ -15,10 +15,6 @@ function cargaEventos(){
             $("#contenido").css("color","green");
         });
     });
-
-  
-
-
 }
 
 
